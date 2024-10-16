@@ -10,5 +10,5 @@
     android:isAccessibilityTool="true"
     android:description="@string/a11y_desc"
     android:notificationTimeout="100"
-    android:settingsActivity="li.songe.gkd.MainActivity"
+    android:settingsActivity="com.nnnn.myg.MainActivity"
     tools:ignore="UnusedAttribute" />

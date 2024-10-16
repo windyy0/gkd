@@ -19,8 +19,8 @@
 -renamesourcefileattribute SourceFile
 
 # self
--keep class li.songe.**{*;}
--keep interface li.songe.**{*;}
+-keep class com.nnnn.myg.**{*;}
+-keep interface com.nnnn.myg.**{*;}
 -keep class com.hjq.toast.** {*;}
 
 -keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod

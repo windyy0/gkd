@@ -49,7 +49,7 @@ plugins {
 }
 
 android {
-    namespace = "li.songe.gkd"
+    namespace = "com.nnnn.myg"
     compileSdk = project.properties["android_compileSdk"].toString().toInt()
     buildToolsVersion = project.properties["android_buildToolsVersion"].toString()
 
@@ -57,9 +57,9 @@ android {
         minSdk = project.properties["android_minSdk"].toString().toInt()
         targetSdk = project.properties["android_targetSdk"].toString().toInt()
 
-        applicationId = "li.songe.gkd"
-        versionCode = 43
-        versionName = "1.9.0-beta.1"
+        applicationId = "com.nnnn.myg"
+        versionCode = 1
+        versionName = "0.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -115,21 +115,21 @@ android {
             versionNameSuffix = vnSuffix
             applicationIdSuffix = ".debug"
 
-            // add "debug" suffix
+            // add "(测试版)" suffix
             listOf(
-                "app_name" to "GKD",
+                "app_name" to "蒙一个",
                 "capture_snapshot" to "捕获快照",
                 "import_data" to "导入数据",
                 "http_server" to "HTTP服务",
                 "float_button" to "悬浮按钮",
             ).forEach {
-                resValue("string", it.first, it.second + "-debug")
+                resValue("string", it.first, it.second + "(测试版)")
             }
         }
     }
     productFlavors {
         flavorDimensions += "channel"
-        create("gkd") {
+        create("myg") {
             isDefault = true
             manifestPlaceholders["updateEnabled"] = true
         }
@@ -161,7 +161,7 @@ android {
 
         "**.properties", "**.bin", "**/*.proto",
         "**/kotlin-tooling-metadata.json",
-
+ 
         // ktor
         "**/custom.config.conf",
         "**/custom.config.yaml",

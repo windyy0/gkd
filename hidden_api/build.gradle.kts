@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "li.songe.gkd"
+    namespace = "com.nnnn.myg"
     compileSdk = project.properties["android_compileSdk"].toString().toInt()
     buildToolsVersion = project.properties["android_buildToolsVersion"].toString()
 
